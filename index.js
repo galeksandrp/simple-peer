@@ -413,8 +413,8 @@ Peer.prototype._maybeReady = function () {
     var localCandidates = {}
 
     function setActiveCandidates (item) {
-      var local = localCandidates[item.localCandidateId]
-      var remote = remoteCandidates[item.remoteCandidateId]
+      var local = localCandidates[item.id]
+      var remote = remoteCandidates[item.id]
 
       self.remoteAddress = remote.ipAddress
       self.remotePort = Number(remote.portNumber)
